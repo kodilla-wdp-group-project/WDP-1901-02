@@ -16,6 +16,7 @@ header {
           font-size: 13px;
 
           &:hover {
+            @extend .transition-items;
             color: $primary;
             text-decoration: none;
           }
@@ -104,6 +105,7 @@ header {
 
         &:hover {
           .cart-icon {
+            @extend .transition-items;
             background-color: lighten($primary, 10%);
           }
         }
@@ -147,6 +149,7 @@ header {
 
             &:hover,
             &.active {
+              @extend .transition-items;
               background-color: $primary;
               color: #ffffff;
               border-color: $primary;
