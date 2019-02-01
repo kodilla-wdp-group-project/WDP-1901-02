@@ -195,6 +195,17 @@ header {
           position: relative;
           z-index: 1;
         }
+
+        &:hover {
+          background-color: $primary;
+
+          i:first-child,
+          i:last-child,
+          select {
+            color: #fff;
+            cursor: pointer;
+          }
+        }
       }
 
       .search-field {
