@@ -185,15 +185,64 @@ header {
           z-index: 0;
         }
 
-        select {
-          -webkit-appearance: none;
-          border: 0;
-          background-color: transparent;
-          outline: none;
-          padding: 5px 30px 5px 35px;
-          font-size: 14px;
-          position: relative;
+        .select {
+          padding: 0 8px;
+          margin: 0;
+          list-style: none;
           z-index: 1;
+
+          .title-select {
+            display: inline-block;
+            position: relative;
+
+            &:hover {
+              a {
+                background: #fff;
+                border-bottom: 1px solid $form-border-color;
+              }
+
+              ul.list-select {
+                transform: scaleY(1);
+              }
+            }
+            a {
+              text-decoration: none;
+              color: $text-color;
+              padding: 0 35px 10px;
+              margin: 0 -8px;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .list-select {
+              transform: scaleY(0);
+              transform-origin: 50% 0;
+              transition: all 0.3s ease-in-out;
+              position: absolute;
+
+              .selection {
+                display: block;
+                border: none;
+
+                &:hover {
+                  a {
+                    background: #ebeaea;
+                    top: 10px;
+                  }
+                }
+
+                a {
+                  display: block;
+                  position: relative;
+                  left: -41px;
+                  top: 10px;
+                  width: 212px;
+                  padding: 10px 50px;
+                  border: 1px solid $form-border-color;
+                  border-top: none;
+                }
+              }
+            }
+          }
         }
       }
 
