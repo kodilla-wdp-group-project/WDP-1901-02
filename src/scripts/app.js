@@ -16,7 +16,7 @@ allStars.forEach(function (item) {
 
   // Funkcja zmiany gwiazdki na kliknięcie
 
-  function rating (event) {
+  function rating(event) {
     const choice = event.target;
     let active = false;
     stars.forEach(function (star) {
@@ -34,7 +34,7 @@ allStars.forEach(function (item) {
 
   // Funkcja zmiany gwiazdki na Hover
 
-  function hoverEffect (event) {
+  function hoverEffect(event) {
     const choice = event.target;
     let active = false;
     stars.forEach(function (star) {
