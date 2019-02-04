@@ -1,0 +1,41 @@
+.brands-container {
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  padding: 25px 0;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 50px;
+
+  .left-arrow,
+  .right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 0.2s linear;
+
+    .fas {
+      font-size: 12px;
+    }
+  }
+
+  .brands-slider {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    margin: 0 20px;
+
+    .img-brand {
+      background: url(../../src/images/logo.png);
+      background-repeat: no-repeat;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 70px;
+      margin: 0 15px;
+      border: 1px solid #e3e3e3;
+    }
+  }
+}
