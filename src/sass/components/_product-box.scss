@@ -81,20 +81,3 @@
   }
 }
 
-.temp{
-  display: none;
-}
-
-/*.animation{
-      animation: background-color 0.25s linear, color 0.25s linear, border-color 0.25s linear;
-}*/
-
-.animation {
-  animation: fadein 5s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
