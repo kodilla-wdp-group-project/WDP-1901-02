@@ -81,3 +81,18 @@
   }
 }
 
+.temp{
+  display: none;
+}
+
+
+
+.animation {
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
