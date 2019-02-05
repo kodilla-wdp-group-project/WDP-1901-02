@@ -3,8 +3,8 @@
   justify-content: space-between;
   height: 140px;
   padding: 25px 0;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #e3e3e3;
+  border-top: $brands-border;
+  border-bottom: $brands-border;
   margin-bottom: 50px;
 
   .left-arrow,
@@ -35,7 +35,7 @@
       box-sizing: border-box;
       padding: 0 70px;
       margin: 0 15px;
-      border: 1px solid #e3e3e3;
+      border: $brands-border;
     }
   }
 }
