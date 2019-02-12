@@ -50,6 +50,11 @@
     .more {
       text-align: center;
       padding-top: 30px;
+
+      .btn-main {
+        width: 50%;
+        margin: 0 auto;
+      }
     }
   }
   &:hover {
