@@ -2,56 +2,48 @@
 
 // Referencje do html-u
 
-let allStars = document.querySelectorAll('.stars');
-
-// Funkcja zmiany gwiazdki na kliknięcie
-
-function rating (event) {
-  let active = false;
-  let singleStar = this.querySelectorAll('.star');
-  let choice = event.target;
-  singleStar.forEach(item => {
-    if (active) {
-      item.classList.remove('active');
-      item.classList.remove('full');
-    } else {
-      item.classList.add('active');
-    }
-    if (item === choice) {
-      active = !active;
-    }
-  });
-}
-
-// Funkcja zmiany gwiazdki na Hover
-
-function hoverEffect (event) {
-  let active = false;
-  let singleStar = this.querySelectorAll('.star');
-  let choice = event.target;
-  singleStar.forEach(item => {
-    if (event.type === 'mouseover') {
-      if (active) {
-        item.classList.remove('full');
-        item.style.color = '#2a2a2a';
-      } else {
-        item.classList.add('full');
-        item.style.color = '#d58e32';
-      }
-      if (item === choice) {
-        active = !active;
-      }
-    } else {
-      item.classList.remove('full');
-      item.style.color = '#2a2a2a';
-    }
-  });
-}
+const allStars = document.querySelectorAll('.stars');
 
 // Nasłuchiwacze
 
-for (let i = 0; i < allStars.length; i++) {
-  allStars[i].addEventListener('click', rating);
-  allStars[i].addEventListener('mouseover', hoverEffect);
-  allStars[i].addEventListener('mouseout', hoverEffect);
-}
+allStars.forEach(function (item) {
+  const stars = item.querySelectorAll('.star');
+  stars.forEach(function (el) {
+    el.addEventListener('click', rating);
+    el.addEventListener('mouseover', hoverEffect);
+    el.addEventListener('mouseout', hoverEffect);
+  });
+
+  // Funkcja zmiany gwiazdki na kliknięcie
+
+  function rating (event) {
+    const choice = event.target;
+    let active = false;
+    stars.forEach(function (star) {
+      if (active) {
+        star.classList.remove('active');
+        star.classList.remove('full');
+      } else if (!active) {
+        star.classList.add('active');
+      }
+      if (star === choice) {
+        active = true;
+      }
+    });
+  }
+
+  // Funkcja zmiany gwiazdki na Hover
+
+  function hoverEffect (event) {
+    const choice = event.target;
+    let active = false;
+    stars.forEach(function (star) {
+      if (!active) {
+        star.classList.toggle('hoverEffect');
+      }
+      if (star === choice) {
+        active = !active;
+      }
+    });
+  }
+});
