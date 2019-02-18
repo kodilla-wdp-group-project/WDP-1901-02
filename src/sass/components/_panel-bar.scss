@@ -63,8 +63,8 @@
     }
   }
 
-  .dots {
-    ul {
+  .blog-dots {
+    .blog-dots-controls {
       margin: 0;
       padding: 0 0 0 1rem;
       list-style: none;
@@ -82,12 +82,36 @@
           border-radius: 6px;
           background-color: #e1e1e1;
 
-          &.active,
           &:hover {
             @extend .transition-items;
             background-color: $primary;
           }
         }
+      }
+
+      > .tns-nav-active {
+        a {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.tns-outer {
+  margin: 0 3%;
+
+  > button {
+    display: none;
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .blog-dots-controls {
+    .nav-lg {
+      display: none;
+      a {
+        display: none;
       }
     }
   }
