@@ -15,7 +15,14 @@
     .carousel-inner {
       overflow-x: hidden;
       width: auto;
-      margin: 0 10%;
+      margin: 0 5%;
+
+      .tns-outer {
+        margin: 0 3%;
+        > button {
+          display: none;
+        }
+      }
 
       .carousel-item {
         justify-content: space-between;
@@ -33,8 +40,7 @@
     .carousel-control-prev,
     .carousel-control-next {
       background-color: #000;
-      width: 4%;
-      margin: 0 20px;
+      width: 30px;
       &:hover {
         background-color: $primary;
       }
