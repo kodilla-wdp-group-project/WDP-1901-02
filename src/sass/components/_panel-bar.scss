@@ -92,3 +92,46 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .panel-bar {
+    display: block;
+
+    .row {
+      display: block;
+
+      .heading {
+        text-align: center;
+
+        &::before {
+          width: 10%;
+          left: 45%;
+        }
+      }
+
+      .menu {
+        margin-top: 15px;
+      }
+
+      .dots {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .panel-bar {
+    .menu {
+      ul {
+        li {
+          margin: 0px 0.3rem;
+
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
