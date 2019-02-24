@@ -128,16 +128,15 @@
     }
   }
 }
-
-.tns-outer {
-  margin: 0 3%;
-
-  > button {
-    display: none;
+.section--products {
+  .tns-outer {
+    > button {
+      display: none;
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .panel-bar {
     display: block;
 

@@ -27,18 +27,10 @@ tns({
 });
 
 tns({
-  container: '.products-carousel',
-  controlsContainer: '.product-dots-controls',
+  container: '.row.products-carousel',
+  navContainer: '.product-dots-controls',
+  controls: false,
   loop: true,
-  items: 1,
-  slideBy: 'page',
-  autoplay: true,
-  autoplayButton: false,
-  speed: 400,
-  mouseDrag: true,
-  nav: false,
-  // gutter: 10,
-  swipeAngle: true,
   responsive: {
     768: {
       items: 1
@@ -49,5 +41,15 @@ tns({
     1199: {
       items: 4
     }
-  }
+  },
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  autoplayButton: false,
+  speed: 600,
+  mouseDrag: true,
+  nav: true,
+  swipeAngle: 30,
+  edgePadding: 0,
+  preventScrollOnTouch: 'auto'
 });
