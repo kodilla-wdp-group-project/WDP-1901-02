@@ -50,6 +50,7 @@ tns({
   mouseDrag: true,
   nav: true,
   swipeAngle: 30,
-  edgePadding: 0,
-  preventScrollOnTouch: 'auto'
+  edgePadding: 15,
+  preventScrollOnTouch: 'auto',
+  gutter: 30
 });
