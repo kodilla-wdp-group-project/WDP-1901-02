@@ -25,3 +25,32 @@ tns({
     }
   }
 });
+
+tns({
+  container: '.row.products-carousel',
+  navContainer: '.product-dots-controls',
+  controls: false,
+  loop: true,
+  responsive: {
+    768: {
+      items: 1
+    },
+    992: {
+      items: 2
+    },
+    1199: {
+      items: 4
+    }
+  },
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  autoplayButton: false,
+  speed: 600,
+  mouseDrag: true,
+  nav: true,
+  swipeAngle: 30,
+  edgePadding: 15,
+  preventScrollOnTouch: 'auto',
+  gutter: 30
+});
