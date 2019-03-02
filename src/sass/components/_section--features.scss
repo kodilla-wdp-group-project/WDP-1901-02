@@ -8,19 +8,17 @@
 	height: 525px;
 }
 
-.promotion_right{
-	flex-grow: 2;
-	height: 525px;
-}
 
 .description{
-	position: absolute;
+
 	text-align: center;	
-	margin-top: 150px;
+
 	color: $white;
 	background-color: rgba($indoor_bg_color,0.5);
 	height: 33%;
 	width: 96%;
+	position: absolute;
+	top: 150px;
 	
 	font-size: 24px;
 
@@ -31,7 +29,7 @@
 
 
 .sofa{
-	background-image: url('../images/sofa.jpg');
+	
 	height: 500px;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -46,14 +44,13 @@
 	margin-top: 40px;
 }
 
-.btn_next{
-	padding:0 2%;
-}
-
 .next{
 	color: $white;
 	background-color: $indoor_button;
-	padding: 0 25%;
+	height: 40px;
+	width: 48%;
+	top: 480px;
+	margin: 0 2%;
 
 	&:hover{
 		background-color: $indoor_button_hoover;
@@ -138,6 +135,90 @@
 	opacity: 1;
 }
 
-.top{
-	margin-top: 50px;
+@media(min-width: 761px) and (max-width: 1200px)
+{
+	
+	.hover_image:hover{
+		opacity: 0;
+	}
+
+	.outlines{
+		width: 50%;
+	}
+
+	.price, .old_price{
+		text-align: center;
+		width: 20%;
+	}
+
+	.description{
+		top: 100px;
+		width: 95.5%;
+	}
+
+	.product_image{
+		height: 205px;
+	}
+
+	.next{
+	width: 47.5%; 
+	margin: 0 2.5%;
+	top: 401px;
+	opacity: 50%;
+	}
+
+	.next{
+		&:hover{
+			background-color: rgba($indoor_bg_color,0.75);
+		}
+	}
 }
+
+@media(max-width: 760px)
+{
+
+ 	.product_image, .promotion_left{
+		display: none;
+	}
+	
+	.next{
+		padding-top: 8px;
+		height: 40px;	
+
+	}
+
+	.btn_next{
+		padding:0 3%;
+	}
+
+	.description{
+		width: 94%;
+		margin-top: -50px;
+		font-size: 20px;
+
+		span{
+			font-size: 25px;
+		}
+	}
+
+	.now{
+		margin-top: 20px;
+	}
+
+	.btn_next{
+		top: 335px;
+	}
+
+	.next{
+		margin: 0 2.5%;
+		width: 47.5%;
+		margin-bottom: 50px;
+	}
+
+	.feature-box{
+		margin-top: 100px;
+	}
+}
+
+
+
