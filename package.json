@@ -43,6 +43,11 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
+<<<<<<< HEAD
     "popper.js": "^1.14.7"
+=======
+    "popper.js": "^1.14.6",
+    "tiny-slider": "^2.9.1"
+>>>>>>> 11052e219817d021584197941d7c2145ecebe7ea
   }
 }
