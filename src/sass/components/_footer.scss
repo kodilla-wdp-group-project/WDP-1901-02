@@ -81,7 +81,7 @@ footer {
 }
 
 
-@media(max-width: 760px){
+@media(min-width: 601px){
  
 footer{
 
@@ -95,7 +95,7 @@ footer{
           }
 
           .copyright{
-            width: 50%;
+            min-width: 50%;
           }
 
           .footer-top{
@@ -115,7 +115,7 @@ footer{
 }
 
 
-@media(min-width: 320px) and (max-width: 759px){
+@media(max-width: 600px){
  
 footer{
 
@@ -135,6 +135,10 @@ footer{
             width: 100%; 
             justify-content: space-around;
             }
+          }
+
+          .footer-top{
+            display: none;
           }
       }
 }
