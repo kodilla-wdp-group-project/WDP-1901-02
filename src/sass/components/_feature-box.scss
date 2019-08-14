@@ -1,14 +1,7 @@
-.feature-box-link {
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 .feature-box {
   border: 1px solid #b6b6b6;
   text-align: center;
-  margin-top: 50px;
-  height: 160px;
+  margin-top: 40px;
 
   .icon {
     transform: translateY(-50%);
@@ -56,7 +49,7 @@
     }
   }
 
-  &:hover {
+  &.active {
     i {
       background-color: $primary;
       color: #ffffff;
@@ -65,7 +58,6 @@
 
     .content {
       color: $primary;
-      cursor: pointer;
     }
   }
 }

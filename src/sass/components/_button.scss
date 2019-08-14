@@ -1,9 +1,4 @@
-.transition-items {
-  transition: transition-duration 0.25s, background-color 0.25s, color 0.25s,
-    opacity 0.25s;
-}
 .btn-main {
-  @extend .transition-items;
   background-color: #2a2a2a;
   color: #ffffff;
   font-size: 16px;
@@ -27,7 +22,6 @@
 }
 
 .btn-outline {
-  @extend .transition-items;
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid #2a2a2a;
@@ -37,11 +31,6 @@
 
   &:hover {
     background-color: #2a2a2a;
-    color: $whiteText;
-  }
-
-  &.active {
-    background-color: $primary;
-    color: $whiteText;
+    color: #ffffff;
   }
 }
